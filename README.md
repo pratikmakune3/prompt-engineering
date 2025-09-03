@@ -67,6 +67,27 @@ Key functions:
 - `multi_task_few_shot(input_text, task)`: Performs a specified task (e.g., sentiment, language) from few-shot examples.
 - `in_context_learning(task_description, examples, input_text)`: Learns a mapping from provided examples (e.g., Pig Latin) and applies it to new input.
 
+### prompt02.py — Chain-of-Thought (CoT) Reasoning
+
+This script showcases:
+
+- Concise vs step-by-step answers using separate prompts
+- Advanced CoT with structured steps (state goal, formula, calculate, explain)
+- A logical puzzle analysis template for systematic reasoning
+
+Run:
+
+```bash
+python prompt02.py
+```
+
+What it does:
+
+- Uses `llama-3.3-70b-versatile` with temperature 0
+- Builds `standard_prompt`, `cot_prompt`, and `advanced_cot_prompt`
+- Generates a worked solution for a composed speed/average problem
+- Provides a reusable `logical_reasoning_prompt` for puzzles
+
 ### prompt03.py — Self-Consistency
 
 Demonstrates the self-consistency technique by generating multiple reasoning paths and aggregating them into a consistent answer, followed by a reliability evaluation.
