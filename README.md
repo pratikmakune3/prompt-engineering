@@ -1,4 +1,4 @@
-# Prompt Engineering - Control the LLM beast
+# Controlling the LLM beast using Prompt Engineering
 
 A small, practical collection of Python scripts demonstrating core prompt engineering techniques using LangChain and Groq LLMs. The examples cover few-shot prompting, multi-task prompts, in-context learning, and self-consistency.
 
